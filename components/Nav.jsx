@@ -17,8 +17,8 @@ const links = [
         path: '/skills',
     },
     {
-        name: 'curriculum',
-        path: '/curriculum',
+        name: 'experiencia',
+        path: '/experiencia',
     },
     {
         name: 'contacto',
@@ -28,7 +28,6 @@ const links = [
 
 const Nav = () => {
     const pathname = usePathname();
-    console.log(pathname)
 
   return (
     <nav className="flex gap-8">
