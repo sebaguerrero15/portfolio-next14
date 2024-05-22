@@ -35,6 +35,7 @@ const Experiencia = () => {
         <motion.div 
         initial={{opacity: 0}} 
         animate={{opacity: 1, transition: {delay: 1.4, duration: 0.4, ease: "easeIn"}}}
+        className="xl:mt-20"
         >
           {trabajos.map((trabajo, index) => (
             <div key={index} className="flex-1 flex flex-col justify-center gap-6 text-white hover:text-accent transition-all duration-500"> 
