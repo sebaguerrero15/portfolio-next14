@@ -1,16 +1,29 @@
+"use client";
+
 import { Button } from "../components/ui/button"
 import {FiDownload} from "react-icons/fi"
+import { useTypewriter, Cursor } from 'react-simple-typewriter'
 import Social from "../components/Social"
 import Photo from "../components/Photo"
 
 const Home = () => {
+
+  const [text] = useTypewriter({
+    words: ['Desarrollador Frontend', 'FullStack Developer'],
+    loop: 0,
+    typeSpeed: 100,
+  });
+
   return (
     <section className="h-full">
       <div className="container mx-auto h-full">
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
           <div className="text-center xl:text-left">
-            <span className="text-xl">Desarrollador Frontend</span>
-            <h1 className="h1 mb-6">¡Hola!, Soy<br /><span className="text-accent">S.Guerrero</span></h1>
+              <h1 className="h1 mb-6">¡Hola!, Soy<br /><span className="text-accent">S.Guerrero</span></h1>
+           
+            <span className="text-xl">{text}</span>
+            <span><Cursor cursorStyle="|" /></span>
+           
             <p className="max-w-[500px] mb-9 text-white/80">
               lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
             </p>
