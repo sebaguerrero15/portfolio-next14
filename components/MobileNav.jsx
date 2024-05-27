@@ -4,6 +4,7 @@ import {Sheet, SheetContent, SheetTrigger} from "../components/ui/sheet"
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { CiMenuFries } from "react-icons/ci";
+import { Button } from "./ui/button"
 
 const links = [
   {
@@ -15,8 +16,8 @@ const links = [
     path: '/proyectos',
   },
   {
-    name: 'skills',
-    path: '/skills',
+    name: 'habilidades',
+    path: '/habilidades',
   },
   {
     name: 'curriculum',
@@ -25,7 +26,7 @@ const links = [
   {
     name: 'contacto',
     path: '/contacto',
-  }
+  },
 ]
 
 const MobileNav = () => {
@@ -46,6 +47,7 @@ const MobileNav = () => {
             {links.map((link, index) => {
               return <Link href={link.path} key={index} className={`${link.path === pathname && "text-accent border-b-2 border-accent"} text-xl capitalize hover:text-accent transition-all`}>{link.name}</Link>
             })}
+            <Link href="/about"><Button>Sobre Mí</Button></Link>
           </nav>
         </SheetContent>
     </Sheet>

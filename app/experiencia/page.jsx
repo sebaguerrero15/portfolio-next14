@@ -4,27 +4,27 @@ import {motion} from "framer-motion"
 const trabajos = [
   {
     id: 1,
-    name: "Frontend Developer",
-    company: "Freelancer",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    date: "2020 - Present",
+    name: "Desarrollador Frontend",
+    company: "Freelancer independiente",
+    description: "Desarrollador de aplicaciones front-end y FullStack de forma autónoma de acuerdo a las últimas tecnologías.",
+    date: "2022 - Present",
     location: "Online",
   },
   {
     id: 2,
-    name: "Backend Developer",
-    company: "Freelancer",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    date: "2020 - Present",
-    location: "Online",
+    name: "Administrador Informático",
+    company: "Municipalidad Quilicura",
+    description: "Encargado de Redes y Mantención y Creación de sitios webs escolares realizadas con Wordpress y php para Escuelas Municipales. Administrador de Aplicaciones Escolares.",
+    date: "2017 - Present",
+    location: "Presencial",
   },
     {
       id: 3,
-        name: "Frontend Developer",
-        company: "Freelancer",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        date: "2020 - Present",
-        location: "Online",
+        name: "Analista QA Cliente Latam Airlines",
+        company: "ElitSoft",
+        description: "Responsable de revisar código de acuerdo con las buenas prácticas de desarrollo de los proyectos en base a las políticas de desarrollo definidas por el área de Arquitectura del cliente LATAM Airlines.",
+        date: "2015 - 2017",
+        location: "Presencial",
     }
 ]
 

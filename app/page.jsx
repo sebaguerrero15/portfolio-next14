@@ -9,7 +9,7 @@ import Photo from "../components/Photo"
 const Home = () => {
 
   const [text] = useTypewriter({
-    words: ['Frontend', 'FullStack'],
+    words: ['FrontEnd', 'FullStack'],
     loop: 0,
     typeSpeed: 100,
   });
@@ -17,15 +17,15 @@ const Home = () => {
   return (
     <section className="h-full">
       <div className="container mx-auto h-full">
-        <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
+        <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-6 xl:pb-10">
           <div className="text-center xl:text-left">
               <h1 className="h1 mb-6">¡Hola!, Soy<br /><span className="text-accent">S.Guerrero</span></h1>
            
-            <span className="text-xl">Desarrollador {text}</span>
+            <span className="text-2xl">Desarrollador {text}</span>
             <span><Cursor cursorStyle="|" /></span>
            
-            <p className="max-w-[500px] mb-9 text-white/80">
-              lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+            <p className="max-w-[500px] mb-9 mt-5 text-white/80">
+            ¡Bienvenido a mi Portafolio Web! Aquí puedes ver mis Proyectos realizados, saber un poco de mi historia y pasatiempos.
             </p>
             {/* CV y redes sociales */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
