@@ -9,7 +9,7 @@ import Photo from "../components/Photo"
 const Home = () => {
 
   const [text] = useTypewriter({
-    words: ['Desarrollador Frontend', 'FullStack Developer'],
+    words: ['Frontend', 'FullStack'],
     loop: 0,
     typeSpeed: 100,
   });
@@ -21,7 +21,7 @@ const Home = () => {
           <div className="text-center xl:text-left">
               <h1 className="h1 mb-6">¡Hola!, Soy<br /><span className="text-accent">S.Guerrero</span></h1>
            
-            <span className="text-xl">{text}</span>
+            <span className="text-xl">Desarrollador {text}</span>
             <span><Cursor cursorStyle="|" /></span>
            
             <p className="max-w-[500px] mb-9 text-white/80">
