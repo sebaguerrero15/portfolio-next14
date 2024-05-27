@@ -1,5 +1,6 @@
 "use client";
 
+import React, { useRef } from 'react';
 import { Button } from "../../components/ui/button";
 import {Input} from "../../components/ui/input";
 import {Textarea} from "../../components/ui/textarea";
@@ -14,7 +15,9 @@ import {
   from "../../components/ui/select";
   import {FaEnvelope, FaMapMarkerAlt} from "react-icons/fa"
   import { motion } from "framer-motion";
+  import emailjs from '@emailjs/browser';
 
+ 
 
   const info = [
     {
@@ -30,6 +33,19 @@ import {
   ]
 
 const Contacto = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_5w92ee9', 'template_1sb9kjo', form.current, '1f-Qg7Jrp-zrW7ra1')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+
   return (
     <motion.section 
     initial={{opacity: 0}} 
@@ -43,7 +59,7 @@ const Contacto = () => {
         <div className="flex flex-col xl:flex-row gap-[30px]">
           {/* form */}
           <div className="xl:w-[54%] order-2 xl:order-none">
-            <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
+            <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
               <h3 className="text-4xl text-accent">Contáctame  😎</h3>
               <p className="text-white/60">
                 Ingresa tus datos y Envíame un Mensaje para mayor Información.
