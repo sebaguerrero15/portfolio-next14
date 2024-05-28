@@ -5,7 +5,7 @@ import {ScrollArea} from "../../components/ui/scroll-area"
 import {motion} from "framer-motion"
 
 const about = {
-    title: "Sobre mi",
+    title: "Un poco Sobre mi",
     description: "Soy Chileno tengo 31 años, de profesión Ingeniero Informático, vivo en la comuna de La Florida junto a mi pareja y mi perro 'Luke' 🐶.",
     info: [
       {

@@ -16,6 +16,9 @@ import {
   import {FaEnvelope, FaMapMarkerAlt} from "react-icons/fa"
   import { motion } from "framer-motion";
   import emailjs from '@emailjs/browser';
+  import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
+  import { useForm } from "react-hook-form"
 
  
 
@@ -34,17 +37,41 @@ import {
 
 const Contacto = () => {
   const form = useRef();
+  const { register, handleSubmit } = useForm();
 
   const sendEmail = (e) => {
     e.preventDefault();
 
+    
+
     emailjs.sendForm('service_5w92ee9', 'template_1sb9kjo', form.current, '1f-Qg7Jrp-zrW7ra1')
       .then((result) => {
+        toast.success("¡Mensaje enviado correctamente!", {
+          position: "top-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+          });
           console.log(result.text);
       }, (error) => {
+        toast.error("Ha ocurrido un error en el envío del Mensaje", {
+          position: "top-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+          });
           console.log(error.text);
       });
   };
+
 
   return (
     <motion.section 
@@ -59,14 +86,14 @@ const Contacto = () => {
         <div className="flex flex-col xl:flex-row gap-[30px]">
           {/* form */}
           <div className="xl:w-[54%] order-2 xl:order-none">
-            <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
+            <form ref={form} onSubmit={handleSubmit(sendEmail)} className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
               <h3 className="text-4xl text-accent">Contáctame  😎</h3>
               <p className="text-white/60">
                 Ingresa tus datos y Envíame un Mensaje para mayor Información.
               </p>
               {/* input */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <Input type="firstname" placeholder="Nombre"/>
+                <Input  {...register("firstName", { required: true, maxLength: 20 })} type="firstname" placeholder="Nombre"/>
                 <Input type="lastname" placeholder="Apellido"/>
                 <Input type="email" placeholder="Correo"/>
               </div>
@@ -87,6 +114,7 @@ const Contacto = () => {
               <Textarea className="h-[200px]" placeholder="Escribe tu Mensaje"/>
               {/* button  */}
               <Button size="md" className="max-w-40">Enviar Mensaje</Button>
+             <ToastContainer />
             </form>
           </div>
             {/* info */}
