@@ -16,12 +16,12 @@ const projects = [
   {
     num: '01',
     category: 'Frontend',
-    title: 'project 1',
-    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit magni magnam voluptates facere natus corrupti cumque veniam soluta blanditiis adipisci impedit.',
-    stack: [{name: 'Html 5'}, {name: 'Css 3'}, {name: 'JS'}, {name: 'React'}],
-    image: '/assets/work/thumb1.png',
-    live: '',
-    github: 'https://github.com',
+    title: 'La Ludoteca',
+    description: 'Proyecto Frontend de una tienda de juegos de mesa desarrollado con NextJs 14. Se utilizó una api local para los productos, para la administración de los estados globales utilizamos Zustand y TailwindCss para dar los estilos.',
+    stack: [{name: 'NextJS 14'}, {name: 'React'}, {name: 'Zustand'}, {name: 'TailwindCSS'}, {name: 'JS'}],
+    image: '/assets/work/laludoteca1.png',
+    live: 'https://la-ludoteca-next14.vercel.app/',
+    github: 'https://github.com/sebaguerrero15/la-ludoteca-next',
   },
   {
     num: '02',
