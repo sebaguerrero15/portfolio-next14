@@ -25,13 +25,13 @@ const projects = [
   },
   {
     num: '02',
-    category: 'Fullstack',
-    title: 'project 2',
+    category: 'FullStack',
+    title: 'Clon de Netflix',
     description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit magni magnam voluptates facere natus corrupti cumque veniam soluta blanditiis adipisci impedit.',
-    stack: [{name: 'NextJs 14'}, {name: 'TailwindCss'}, {name: 'Node.js'}, {name: 'React'}],
-    image: '/assets/work/thumb2.png',
+    stack: [{name: 'Vite'}, {name: 'Firebase'}, {name: 'Css'}, {name: 'React'}],
+    image: '/assets/work/netflix-clone.png',
     live: '',
-    github: 'https://github.com',
+    github: 'https://github.com/sebaguerrero15/netflix-clon-vite',
   },
   {
     num: '03',
