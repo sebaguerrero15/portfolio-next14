@@ -85,12 +85,12 @@ const page = () => {
                 <div className="flex flex-col gap-[30px] text-center xl:text-left">
                     <h3 className="text-4xl font-bold">{education.title}</h3>
                     <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{education.description}</p> 
-                    <ScrollArea className="h-[400px]">
+                    <ScrollArea className="h-[400px] mb-4">
                       <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                         {education.items.map((educa, index) => (
                           <li 
                           key={index}
-                          className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
+                          className="bg-[#232329] h-[184px] py-4 px-8 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
                           >
                             <span className="text-accent">{educa.duration}</span>
                             <h3 className="text-lg max-w-[260px] min-h-[60px] text-center lg:text-left">{educa.academy}</h3>
