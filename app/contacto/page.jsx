@@ -39,11 +39,8 @@ const Contacto = () => {
   const form = useRef();
   const { register, handleSubmit } = useForm();
 
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    
-
+  const sendEmail = () => {
+   
     emailjs.sendForm('service_5w92ee9', 'template_1sb9kjo', form.current, '1f-Qg7Jrp-zrW7ra1')
       .then((result) => {
         toast.success("¡Mensaje enviado correctamente!", {

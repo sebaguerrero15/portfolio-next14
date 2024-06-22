@@ -3,6 +3,7 @@
 import { Button } from "../components/ui/button"
 import {FiDownload} from "react-icons/fi"
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
+import Link from "next/link";
 import Social from "../components/Social"
 import Photo from "../components/Photo"
 
@@ -29,8 +30,8 @@ const Home = () => {
             </p>
             {/* CV y redes sociales */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <Button variant="outline" size="lg" className="flex items-center gap-2">
-                <span>Descargar CV</span>
+              <Button  variant="outline" size="lg" className="flex items-center gap-2">
+                <Link href="/cv.pdf" target="_blank" download="cvsg.pdf">Descargar CV</Link>
                 <FiDownload className="text-xl"/>
               </Button>
               {/* redes sociales */}
