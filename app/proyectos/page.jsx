@@ -37,7 +37,7 @@ const projects = [
     num: '03',
     category: 'FullStack',
     title: 'Clon de Netflix',
-    description: 'Proyecto Fullstack de clon de netflix desarrollado en vite. Se utilizó una api la cual realice en MongoDB, para la administración de los estados globales utilizamos Zustand y TailwindCSS para dar los estilos.',
+    description: 'Proyecto Fullstack de clon de netflix desarrollado en vite. Se utilizó una api la cual realice en Firebase, para la administración de los estados globales utilizamos Zustand y TailwindCSS para dar los estilos.',
     stack: [{name: 'Vite'}, {name: 'Firebase'}, {name: 'Css'}, {name: 'React'}],
     image: '/assets/work/netflix-clone.png',
     live: '',
