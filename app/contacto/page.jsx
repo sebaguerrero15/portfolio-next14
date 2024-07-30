@@ -41,7 +41,7 @@ const Contacto = () => {
 
   const sendEmail = () => {
    
-    emailjs.sendForm('service_5w92ee9', 'template_1sb9kjo', form.current, '1f-Qg7Jrp-zrW7ra1')
+    emailjs.sendForm('service_5w92ee9', 'template_f8u651s', form.current, 'lLEYCY8Sh5PUmOyXs')
       .then((result) => {
         toast.success("¡Mensaje enviado correctamente!", {
           position: "top-center",
