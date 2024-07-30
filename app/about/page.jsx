@@ -28,27 +28,23 @@ const education = {
     description: "Me gradué de Ingeniería Informática el año 2015 en la Universidad Tecnológica de Chile Inacap y posteriormente seguí realizando cursos para estar actualizado sobre las nuevas tecnologías.",
   items: [
   {
-    academy: "Mi Educación",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore excepturi maiores possimus dolor cumque maxime sequi quo delectus aliquid.",
-    duration: "2020 - Present",
-    course: "Frontend Developer",
+    academy: "Desafio Latam, Udemy",
+    duration: "2024",
+    position: "Bases de Git, Github y Docker",
   },  
   {
-    academy: "Mi Educación",
-    description: "Me gradue de Ingenieria Informatica el año 2015 en la Universidad Tecnologica de Chile Inacap",
-    duration: "2020 - Present",
-    position: "Frontend Developer",
+    academy: "FreecodeCamp, Sence Chile",
+    duration: "2022",
+    position: "Responsive Web Design, HTML5 + CSS",
   },
  
   {
     academy: "Universidad Tecnológica de Chile Inacap",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore excepturi maiores possimus dolor cumque maxime sequi quo delectus aliquid.",
     duration: "2011 - 2015",
-    position: "Ingenieria Informática",
+    position: "Titulado de Ingenieria Informática",
   },
   {
     academy: "Colegio Novo Mundo",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore excepturi maiores possimus dolor cumque maxime sequi quo delectus aliquid.",
     duration: "2003 - 2010",
     position: "Enseñanza Básica y Media",
   },

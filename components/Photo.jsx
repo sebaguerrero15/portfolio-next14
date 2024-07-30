@@ -2,7 +2,7 @@
 
 const Photo = () => {
   return (
-    <div>Photo</div>
+    <div>imagén</div>
   )
 }
 

@@ -14,19 +14,15 @@ const habilitys = {
   habilityList: [
     {
       name: "Responsabilidad",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     },
     {
-      name: "Puntualidad",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      name: "Trabajo en Equipo",
     },
     {
       name: "Resolutivo",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     },
     {
-      name: "Autodidacta",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      name: "Planificación y Gestión del tiempo",
     }
   ]
 }
@@ -100,7 +96,7 @@ const Skills = () => {
                       <ul className="grid grid-cols-1 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
                         {habilitys.habilityList.map((hability, index) => (
                           <li key={index} className="flex items-center  xl:justify-start gap-4">
-                            <span className="text-accent font-bold">🟢 {hability.name}</span>
+                            <span className="text-white font-bold">🟢 {hability.name}</span>
                            
                           </li>
                         ))}

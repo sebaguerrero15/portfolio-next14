@@ -4,9 +4,9 @@ import {motion} from "framer-motion"
 const trabajos = [
   {
     id: 1,
-    name: "Desarrollador Frontend",
+    name: "Desarrollador Frontend React",
     company: "Freelancer independiente",
-    description: "Desarrollador de aplicaciones front-end y FullStack de forma autónoma de acuerdo a las últimas tecnologías.",
+    description: "Desarrollador de aplicaciones Front-End y FullStack de forma autónoma de acuerdo a las últimas tecnologías. Mi stack principal es trabajar en el frontend con NextJS 14, React, TailwindCSS y JavaScript y MongoDB para el backend.",
     date: "2022 - Present",
     location: "Online",
   },
@@ -14,7 +14,7 @@ const trabajos = [
     id: 2,
     name: "Administrador Informático",
     company: "Municipalidad Quilicura",
-    description: "Encargado de Redes y Mantención y Creación de sitios webs escolares realizadas con Wordpress y php para Escuelas Municipales. Administrador de Aplicaciones Escolares.",
+    description: "Encargado de Redes y Mantención y Creación de sitios webs escolares realizadas con Wordpress y php para Escuelas Municipales de la comuna. Administrador de Aplicaciones Escolares.",
     date: "2017 - Present",
     location: "Presencial",
   },

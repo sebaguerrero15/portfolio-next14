@@ -26,24 +26,23 @@ const projects = [
   {
     num: '02',
     category: 'FullStack',
+    title: 'Kyber Streaming',
+    description: 'Proyecto Fullstack de una streaming de series y peliculas gratis desarrollado en Next14. Se utilizó una api la cual realice en MongoDB, para la administración de los estados globales utilizamos Zustand y TailwindCSS para dar los estilos.',
+    stack: [{name: 'NextJS 14'}, {name: 'MongoDB'}, {name: 'Zustand'}, {name: 'TailwindCSS'}, {name: 'React'}],
+    image: '/assets/work/kyber1.png',
+    live: 'https://kyber-swart.vercel.app/',
+    github: 'https://github.com/sebaguerrero15/caricatoons',
+  },
+  {
+    num: '03',
+    category: 'FullStack',
     title: 'Clon de Netflix',
-    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit magni magnam voluptates facere natus corrupti cumque veniam soluta blanditiis adipisci impedit.',
+    description: 'Proyecto Fullstack de clon de netflix desarrollado en vite. Se utilizó una api la cual realice en MongoDB, para la administración de los estados globales utilizamos Zustand y TailwindCSS para dar los estilos.',
     stack: [{name: 'Vite'}, {name: 'Firebase'}, {name: 'Css'}, {name: 'React'}],
     image: '/assets/work/netflix-clone.png',
     live: '',
     github: 'https://github.com/sebaguerrero15/netflix-clon-vite',
-  },
-  {
-    num: '03',
-    category: 'frontend',
-    title: 'project 2',
-    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit magni magnam voluptates facere natus corrupti cumque veniam soluta blanditiis adipisci impedit.',
-    stack: [{name: 'Html 5'}, {name: 'Css 3'}, {name: 'JS'}, {name: 'React'}],
-    image: '/assets/work/thumb3.png',
-    live: '',
-    github: 'https://github.com',
   }
-  
 ]
 
 
